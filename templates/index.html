@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="welcome">
+    Welcome to Hacker's Challenge.<br>
+    Your mission is to bypass security and find the digital treasure.
+</div>
+
+<a href="{{ url_for('level1') }}" class="btn btn-green">Start Challenge</a>
+{% endblock %}

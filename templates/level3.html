@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="question">
+    Decode this: SGFjayEh<br>
+    (Hint: Base64)
+</div>
+
+<form method="POST">
+    <input type="text" name="answer" class="input-field" placeholder="Enter decoded text" required><br>
+    <button type="submit" class="btn btn-blue">Submit Answer</button>
+</form>
+
+<a href="{{ url_for('hint') }}" class="btn btn-orange">Show Hint</a>
+{% endblock %}

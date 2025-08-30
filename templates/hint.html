@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="question">
+    <strong>Base64 decoding hint:</strong><br>
+    You need to decode the Base64 string.<br>
+    Try using an online Base64 decoder or figure it out yourself!<br>
+    Enter the decoded text in lowercase.
+</div>
+
+<a href="{{ url_for('level3') }}" class="btn btn-blue">Back to Level 3</a>
+{% endblock %}

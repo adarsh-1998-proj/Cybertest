@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker's Challenge</title>
+    <style>
+        body {
+            background-color: black;
+            color: lime;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .ascii-art {
+            font-size: 10px;
+            white-space: pre;
+            color: lime;
+            margin-bottom: 20px;
+        }
+        .welcome {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .question {
+            font-size: 14px;
+            color: white;
+            margin: 30px 0;
+            line-height: 1.5;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 8px;
+            font-size: 14px;
+            font-family: 'Courier New', monospace;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 4px;
+            min-width: 200px;
+        }
+        .btn-red { background-color: red; color: white; }
+        .btn-green { background-color: green; color: white; }
+        .btn-blue { background-color: blue; color: white; }
+        .btn-orange { background-color: orange; color: white; }
+        .btn-gold { background-color: gold; color: black; }
+        .input-field {
+            padding: 10px;
+            font-size: 14px;
+            margin: 10px;
+            border: 2px solid lime;
+            background-color: black;
+            color: white;
+            border-radius: 4px;
+            width: 250px;
+        }
+        .game-over {
+            color: red;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .victory {
+            color: gold;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            .ascii-art { font-size: 8px; }
+            .btn { min-width: 150px; font-size: 12px; }
+            .input-field { width: 200px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ascii-art">*******************************************************************************
+  _   _            _      _____ _               _   _      _                     
+ | | | |          | |    / ____| |             | | | |    (_)                    
+ | |_| | __ _  ___| | __| (___ | |__   ___  ___| |_| | ___ _ _ __   ___ _ __ ___ 
+ |  _  |/ _` |/ __| |/ / \___ \| '_ \ / _ \/ __| __| |/ / | | '_ \ / _ \ '__/ __|
+ | | | | (_| | (__|   <  ____) | | | |  __/ (__| |_|   <| | | | | |  __/ |  \__ \
+ |_| |_|\__,_|\___|_|\_\|_____/|_| |_|\___|\___|\__|_|\_\_|_|_| |_|\___|_|  |___/
+*******************************************************************************</div>
+        
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="question">
+    You get an email: "Click here to claim $1,000,000!" What do you do?
+</div>
+
+<form method="POST">
+    <button type="submit" name="choice" value="A" class="btn btn-blue">(A) Click the link</button><br>
+    <button type="submit" name="choice" value="B" class="btn btn-orange">(B) Report as spam</button><br>
+    <button type="submit" name="choice" value="C" class="btn btn-red">(C) Forward to a friend</button>
+</form>
+{% endblock %}
